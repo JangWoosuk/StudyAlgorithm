@@ -1,8 +1,14 @@
 package DesignPattern.factoryMethodPattern;
 
 public class Shose {
+
     Material material;
     Outsole outsole;
+
+    public String toString(){
+        return "material : " + this.material + "outSole : " + outsole;
+    }
+
     public void makeShose(){
         System.out.println(toString() + "가 만들어 졌습니다.");
     }

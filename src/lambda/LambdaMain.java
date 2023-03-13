@@ -30,8 +30,8 @@ public class LambdaMain {
 
         Supplier<String> s = () -> "jordan";
         System.out.println(s.get());
-        Consumer<String> consumer = (str) -> System.out.println(str.split(" ")[0]);
-        consumer.andThen(System.out::println).accept("jordan dunk");
+        Consumer<String> consumer = (str) -> System.out.println(str.split(" ")[1]);
+        consumer.andThen(System.out::println).accept("nike dunk");
         Function<String, Integer> function = str -> str.length();
         System.out.println(function.apply("this length is 17"));
         Predicate<String> predicate = (str) -> str.equals("Hello World");
